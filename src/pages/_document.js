@@ -1,3 +1,4 @@
+import Modal from '@/components/modal';
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
@@ -12,7 +13,7 @@ export default function Document() {
 				/>
 				<link
 					rel="shortcut icon"
-					href="/milad-favIcon.ico"
+					href="/milad-pic.ico"
 					className="rounded-full"
 				/>
 			</Head>

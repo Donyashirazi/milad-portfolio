@@ -37,7 +37,7 @@ const ProjectSwiper = () => {
 								onClick={() =>
 									router.push('/projects/' + eachProject.id)
 								}
-								className=""
+								className="cursor-pointer"
 							>
 								<EachProjectContainer
 									eachProject={eachProject}

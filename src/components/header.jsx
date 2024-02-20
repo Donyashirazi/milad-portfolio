@@ -3,6 +3,15 @@ import Link from 'react-scroll/modules/components/Link';
 
 const Header = () => {
 	const [scrollValue, setScrollValue] = useState(0);
+	useEffect(() => {
+		const onScroll = (e) => {
+			setScrollValue(e.target.documentElement.scrollTop);
+		};
+
+		window.addEventListener('scroll', onScroll);
+
+		return () => window.removeEventListener('scroll', onScroll);
+	}, [scrollValue]);
 
 	useEffect(() => {
 		const onScroll = (e) => {
@@ -14,13 +23,17 @@ const Header = () => {
 		return () => window.removeEventListener('scroll', onScroll);
 	}, [scrollValue]);
 	return (
-		<div className="sticky top-0 md:min-h-[100px] min-h-[72px] flex flex-row md:gap-[24px] justify-between items-center md:py-[64px] md:px-[32px] py-[16px] px-[24px] font-medium z-50">
+		<div
+			className={`sticky top-0 md:min-h-[100px] min-h-[72px] flex flex-row md:gap-[24px] justify-between items-center md:py-[64px] md:px-[32px] py-[16px] px-[24px] font-medium z-50 ${
+				scrollValue > 0 ? 'bg-black' : 'bg-transparent'
+			}`}
+		>
 			<h2 className="md:text-[24px] text-[20px]">
 				Milad’s
 				<span className="md:text-[16px] text-[14px]"> Portfolio</span>
 			</h2>
 
-			<div className="flex md:flex-row md:gap-[24px] text-[20px]">
+			<div className="flex md:flex-row md:gap-[24px] text-[20px] cursor-pointer">
 				<Link
 					to="projects"
 					smooth={true}
