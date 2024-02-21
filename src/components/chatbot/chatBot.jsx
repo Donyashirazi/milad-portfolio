@@ -5,8 +5,8 @@ import Clear from './clear';
 import Message from './message';
 import axios from 'axios';
 import { headers } from '../../../next.config';
-import { InitialPrompt } from './data';
 import { HiOutlineX } from 'react-icons/hi';
+import { InitialPrompt } from './promptData';
 
 const ChatBot = ({ setShowModal }) => {
 	const [input, setInput] = useState('');

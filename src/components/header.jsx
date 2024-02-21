@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'react-scroll/modules/components/Link';
 
-const Header = () => {
+const Header = ({ headerTransparent }) => {
 	const [scrollValue, setScrollValue] = useState(0);
 	useEffect(() => {
 		const onScroll = (e) => {
@@ -25,7 +25,7 @@ const Header = () => {
 	return (
 		<div
 			className={`sticky top-0 md:min-h-[100px] min-h-[72px] flex flex-row md:gap-[24px] justify-between items-center md:py-[64px] md:px-[32px] py-[16px] px-[24px] font-medium z-50 ${
-				scrollValue > 0 ? 'bg-black' : 'bg-transparent'
+				headerTransparent ? 'bg-transparent' : 'bg-black'
 			}`}
 		>
 			<h2 className="md:text-[24px] text-[20px]">

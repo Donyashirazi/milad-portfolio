@@ -1,7 +1,7 @@
 import AllProjects from '@/components/data';
 import Header from '@/components/header';
 import Define from '@/components/tabs/define';
-import Empathize from '@/components/tabs/empathize';
+import NonTechnicalSummery from '@/components/tabs/non-technical-summery';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs';
 import React, { useEffect, useState } from 'react';
 
@@ -25,7 +25,8 @@ export const getStaticProps = (context) => {
 };
 
 const Projects = ({ project }) => {
-	const navbars = ['Empathize', 'Define', 'Design', 'Deliver', 'Impact'];
+	const navbars = ['Non-Technical summary', 'Technical dive', 'Results'];
+	console.log('projetc', project);
 
 	return (
 		<div>
@@ -35,10 +36,10 @@ const Projects = ({ project }) => {
 					backgroundImage: `url(${project[0]?.image})`,
 				}}
 			>
-				<Header />
+				<Header headerTransparent={true} />
 			</div>
 			<Tabs
-				defaultValue="Empathize"
+				defaultValue={'Non-Technical summary'}
 				className="mx-[64px] "
 			>
 				<TabsList className="">
@@ -46,14 +47,14 @@ const Projects = ({ project }) => {
 						{navbars.map((eachTab) => (
 							<TabsTrigger
 								value={eachTab}
-								className="px-[42px] py-[20px] my-[8px] focus:bg-[#2D51CF] rounded-[100px]"
+								className="px-[42px] py-[20px] my-[8px] focus:bg-[#2D51CF] aria-selected:bg-[#2D51CF] rounded-[100px]"
 							>
 								{eachTab}
 							</TabsTrigger>
 						))}
 					</div>
-					<TabsContent value="Empathize">
-						<Empathize project={project} />
+					<TabsContent value="Non-Technical summary">
+						<NonTechnicalSummery project={project} />
 					</TabsContent>
 					<TabsContent value="Define">
 						<Define project={project} />
