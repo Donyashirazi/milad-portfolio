@@ -5,7 +5,7 @@ import ChatBox from './chatbox';
 import ChatBotModal from './modal';
 
 const AboutMilad = () => {
-	const [showModal, setShowModal] = useState(true);
+	const [showModal, setShowModal] = useState(false);
 	useEffect(() => console.log('test', showModal), [showModal]);
 	return (
 		<div

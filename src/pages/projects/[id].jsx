@@ -1,7 +1,8 @@
 import AllProjects from '@/components/data';
 import Header from '@/components/header';
-import Define from '@/components/tabs/define';
 import NonTechnicalSummery from '@/components/tabs/non-technical-summery';
+import Results from '@/components/tabs/results';
+import TechnicalDive from '@/components/tabs/technical-dive';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs';
 import React, { useEffect, useState } from 'react';
 
@@ -56,8 +57,11 @@ const Projects = ({ project }) => {
 					<TabsContent value="Non-Technical summary">
 						<NonTechnicalSummery project={project} />
 					</TabsContent>
-					<TabsContent value="Define">
-						<Define project={project} />
+					<TabsContent value="Technical dive">
+						<TechnicalDive project={project} />
+					</TabsContent>
+					<TabsContent value="Results">
+						<Results project={project} />
 					</TabsContent>
 				</TabsList>
 			</Tabs>
