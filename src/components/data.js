@@ -328,7 +328,7 @@ const AllProjects = [
 					title: 'Prerequisite',
 					description:
 						'Banks pay each other a transaction fee every time their customers use other banks ATM. The simplified fee report format provided by the 3rd party gateway is:',
-					image: '/images/project1/schema.png',
+					image: '/images/project3/schema.png',
 					imageDescription: '',
 					lastContent:
 						'The problem, however, lies in lack of knowledge about the ATM IDs, as there is no available information about their whereabouts. In other words, the rival company’s ATMs with the highest fees could\
