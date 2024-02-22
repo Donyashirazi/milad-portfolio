@@ -24,7 +24,7 @@ const ChatBot = ({ setShowModal }) => {
 		await fetch('https://api.openai.com/v1/chat/completions', {
 			method: 'POST',
 			headers: {
-				Authorization: `Bearer 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`,
+				Authorization: `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`,
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
