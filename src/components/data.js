@@ -1,6 +1,7 @@
 const AllProjects = [
 	{
 		id: '1',
+		status: 'done',
 		image: '/images/Rigid.jpg',
 		title: 'ML Development at RIGID ROBOTICS',
 		about: 'Detecting complex behavioral states of the excavator machines by training customized Machine-Learning models on Signal datasets',
@@ -154,6 +155,7 @@ const AllProjects = [
 
 	{
 		id: '2',
+		status: 'done',
 		image: '/images/Futsal.jpg',
 		title: 'Futsal score prediction',
 		about: 'Application of Machine Learning in daily life',
@@ -310,6 +312,7 @@ const AllProjects = [
 
 	{
 		id: '3',
+		status: 'done',
 		image: '/images/ATM.jpg',
 		title: 'ATM Allocation',
 		about: 'Application of Machine Learning in recommending the most optimized locations across the country',
@@ -491,6 +494,7 @@ const AllProjects = [
 
 	{
 		id: '4',
+		status: 'coming soon',
 		image: '/images/AI.jpg',
 		title: 'Design, Development, Deployment, and monitoring entire ML pipeline at RIGID ROBOTICS',
 		about: 'Python Integration and Real-Time prediction of the developed AI models on Azure cloud services (Coming soon)',

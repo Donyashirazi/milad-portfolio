@@ -5,7 +5,7 @@
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+	--background-end-rgb: #898989;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +18,7 @@
 
 body {
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	background: #1a1a1a;
 }
 .swiper {
 	position: relative;
@@ -32,41 +27,43 @@ body {
 	background-image: url(/nextOne.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	top: 19px !important;
+	top: 24px !important;
 	left: 0 !important;
 	background-color: transparent;
 	transform: rotate(180deg);
-	width: full !imoprtant;
+	width: 44px !important;
 }
 .swiper-button-next {
 	background-image: url(/nextOne.svg);
+	z-index: 10;
 	background-repeat: no-repeat;
 	background-position: center;
-	top: 64px !important;
+	top: 78px !important;
 	left: 0 !important;
-	width: 36px !imoprtant;
-	height: 36px !imoprtant;
+	width: 44px !important;
 }
+
 .swiper-button-next::after {
 	display: none;
+	width: 30px;
 	position: absolute;
 }
 .swiper-button-prev::after {
 	display: none;
 }
 .swiper-pagination {
-	background-color: #ffffff !important;
+	background-color: #1a1a1a !important;
 	width: 9px !important;
 	height: full !important;
 	border-radius: 100% !important;
-	top: 104px !important;
-	left: 13px !important;
+	top: 124px !important;
+	left: 18px !important;
 }
 .swiper-wrapper {
-	left: 58px !important;
+	left: 62px !important;
 }
 .swiper-pagination-progressbar-fill {
-	background-color: #3e3e3e !important;
+	background-color: white !important;
 	border-radius: 64px !important;
 	width: 11px !important;
 }

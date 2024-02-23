@@ -30,7 +30,7 @@ const Projects = ({ project }) => {
 	console.log('projetc', project);
 
 	return (
-		<div>
+		<div className="max-w-[2200px] m-auto">
 			<div
 				className={`h-[662px] w-full bg-no-repeat bg-cover bg-center bg-fixed rounded-b-[100px]`}
 				style={{

@@ -20,7 +20,7 @@ const ProjectSwiper = () => {
 			id="projects"
 			className="flex flex-col items-start justify-start mx-[106px] mt-[106px]"
 		>
-			<div className="flex flex-col md:h-[800px]  px-[10px]">
+			<div className="flex flex-col md:h-[800px] mb-[60px] ml-[-16px]">
 				<Swiper
 					pagination={{
 						type: 'progressbar',
@@ -37,7 +37,7 @@ const ProjectSwiper = () => {
 								onClick={() =>
 									router.push('/projects/' + eachProject.id)
 								}
-								className="cursor-pointer"
+								className={`cursor-pointer`}
 							>
 								<EachProjectContainer
 									eachProject={eachProject}
@@ -48,12 +48,6 @@ const ProjectSwiper = () => {
 					))}
 				</Swiper>
 			</div>
-			<Link
-				href={'/'}
-				className="text-[20px] text-[#FFFFFF] my-[40px] underline"
-			>
-				Wanna see my personal chat-bot?
-			</Link>
 		</div>
 	);
 };

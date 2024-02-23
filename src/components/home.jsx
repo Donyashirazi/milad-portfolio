@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import AboutMilad from './About';
 import ProjectSwiper from './projects';
+import Footer from './footer';
 
 const HomeComponent = () => {
 	return (
@@ -9,6 +10,7 @@ const HomeComponent = () => {
 			<Header />
 			<AboutMilad />
 			<ProjectSwiper />
+			<Footer />
 		</div>
 	);
 };

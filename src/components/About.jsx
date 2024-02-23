@@ -20,13 +20,12 @@ const AboutMilad = () => {
 					</h3>
 					<br />
 					<p className="md:text-[20px]">
-						I am a veteran Data Scientist and Machine-Learning
-						Engineer who is passionate about machine-learning
-						applications and staying up-to-date with latest
-						technology advancements. I have over 5 years of
-						experience in design, development, deployment,
-						maintaining, monitoring, and scaling data and AI
-						pipelines as well as collaborating with various
+						I am a Data Scientist and Machine-Learning Engineer who
+						is passionate about machine-learning applications and
+						staying up-to-date with latest technology advancements
+						with over 5 years of experience in design, development,
+						deployment, maintaining, monitoring, and scaling data
+						and AI pipelines as well as collaborating with various
 						technical and non-technical teams and individuals.
 					</p>
 					<br />
@@ -49,13 +48,16 @@ const AboutMilad = () => {
 						(content-based, Item/user-based, collaborative
 						filtering), Reinforcement Learning, Computer Vision and
 						Image Processing, and Data Engineering and Software
-						Engineering common practices
+						Engineering common practices.
 					</p>
 				</div>
-				<div className="flex flex-col justify-center items-center gap-[43px] mt-[62px] mr-[64px]">
+				<div className="relative group flex flex-col justify-center items-center gap-[43px] mt-[62px] mr-[64px]">
 					<div
-						className={`relative md:min-w-[411px] bg-[url(/images/milad/milad-full.jpg)] md:min-h-[448px] min-w-[342px] min-h-[372px] rounded-[10px] hover:bg-[url(/images/milad/milad-AI-full.png)] bg-no-repeat bg-cover bg-center`}
+						className={`relative md:min-w-[411px] bg-[url(/images/milad/milad-full.jpg)] md:min-h-[448px] min-w-[342px] min-h-[372px] rounded-[10px] hover:bg-[url(/images/milad/milad-AI-full.png)] bg-no-repeat bg-cover bg-center `}
 					/>
+					<h2 className="absolute bottom-[60px] z-50 mt-[-20px] hidden group-hover:block bg-white/[0.6] text-black p-[10px] rounded-xl">
+						Created by Stability-AI Refiner and Upscaler models
+					</h2>
 					<ChatBox
 						showModal={showModal}
 						setShowModal={setShowModal}
@@ -63,9 +65,9 @@ const AboutMilad = () => {
 				</div>
 				{showModal && <ChatBotModal setShowModal={setShowModal} />}
 			</div>
-			<Link to="projects">
+			{/* <Link to="projects">
 				<HiArrowSmDown className="bg-[#898989] m-auto text-white rounded-full w-[42px] h-[42px]" />
-			</Link>
+			</Link> */}
 		</div>
 	);
 };
