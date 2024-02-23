@@ -14,19 +14,19 @@ const AboutMilad = () => {
 		>
 			<div className="flex flex-row">
 				<div className="md:ml-[104px] md:mt-[32px] mr-[40px]">
-					<h2 className="md:text-[64px]">Milad Shirazi</h2>
+					<h2 className="md:text-[64px]">{`Milad Shirazi`}</h2>
 					<h3 className="md:text-[32px]">
-						I apply AI to solve problems!
+						{`I apply AI to solve problems!`}
 					</h3>
 					<br />
 					<p className="md:text-[20px]">
-						I am a Data Scientist and Machine-Learning Engineer who
+						{`I am a Data Scientist and Machine-Learning Engineer who
 						is passionate about machine-learning applications and
 						staying up-to-date with latest technology advancements
 						with over 5 years of experience in design, development,
 						deployment, maintaining, monitoring, and scaling data
 						and AI pipelines as well as collaborating with various
-						technical and non-technical teams and individuals.
+						technical and non-technical teams and individuals.`}
 					</p>
 					<br />
 					<p className="md:text-[20px]">

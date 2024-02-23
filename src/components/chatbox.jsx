@@ -23,14 +23,14 @@ const ChatBox = ({ setShowModal }) => {
 						/>
 					</div>
 					<p className="font-normal text-[16px] text-[#000000]">
-						I am Virtual Milad. I have been trained to replicate
-						him. Ask me anything!
+						{`I am Virtual Milad. I have been trained to replicate
+						him. Ask me anything!`}
 					</p>
 					<button
 						onClick={() => setShowModal(true)}
 						className="w-full flex flex-row items-center justify-between md:text-[20px] rounded-[32px] hover:bg-[#2D51CF]/[0.20]"
 					>
-						<p className="text-[#000000] ">Click here to start!</p>
+						<p className="text-[#000000] ">{`Click here to start!`}</p>
 						<HiMiniArrowRightCircle className="text-[#2D51CF] w-[42px] h-[42px]" />
 					</button>
 				</div>

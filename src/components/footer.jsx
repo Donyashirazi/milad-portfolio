@@ -16,7 +16,7 @@ const Footer = () => {
 				<div className="flex flex-row items-center gap-[18px]">
 					<MdEmail size={32} />
 					<h2 className="text-[20px] hover:text-gray-300">
-						milad.shirazi@gmail.com
+						{`milad.shirazi@gmail.com`}
 					</h2>
 				</div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
 						className="text-[20px] hover:text-gray-300"
 						href={'https://www.linkedin.com/in/milad-r-shirazi/'}
 					>
-						https://www.linkedin.com/in/milad-r-shirazi/
+						{`https://www.linkedin.com/in/milad-r-shirazi/`}
 					</Link>
 				</div>
 				<div className="flex flex-row items-center gap-[18px]">
@@ -38,7 +38,7 @@ const Footer = () => {
 						className="text-[20px] hover:text-gray-300"
 						href={'https://github.com/miladrezae'}
 					>
-						https://github.com/miladrezae
+						{`https://github.com/miladrezae`}
 					</Link>
 				</div>
 			</div>

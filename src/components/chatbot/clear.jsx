@@ -6,7 +6,7 @@ export default function Clear({ onClick }) {
 			}
 			onClick={onClick}
 		>
-			Clear
+			{`Clear`}
 		</button>
 	);
 }

@@ -11,7 +11,7 @@ const EachProjectContainer = ({ eachProject }) => {
 		>
 			{eachProject.status === 'coming soon' && (
 				<h2 className="m-auto text-[38px] font-medium">
-					Coming soon...
+					{`Coming soon...`}
 				</h2>
 			)}
 			<div

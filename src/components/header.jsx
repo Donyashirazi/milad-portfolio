@@ -33,10 +33,9 @@ const Header = ({ headerTransparent }) => {
 		>
 			<button onClick={() => router.push('/')}>
 				<h2 className="md:text-[24px] text-[20px] hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)] transition-all duration-100">
-					Milad’s
+					{`Milad’s`}
 					<span className="md:text-[16px] text-[14px]">
-						{' '}
-						Portfolio
+						{`Portfolio`}
 					</span>
 				</h2>
 			</button>

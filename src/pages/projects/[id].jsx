@@ -4,7 +4,7 @@ import NonTechnicalSummery from '@/components/tabs/non-technical-summery';
 import Results from '@/components/tabs/results';
 import TechnicalDive from '@/components/tabs/technical-dive';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export const getStaticPaths = () => {
 	const paths = AllProjects.map((eachProject) => ({
@@ -45,8 +45,9 @@ const Projects = ({ project }) => {
 			>
 				<TabsList className="">
 					<div className="flex flex-row items-center justify-around text-[32px] rounded-[100px] bg-[#1648F7]/[0.22] mt-[48px] mb-[72px] mx-[64px]">
-						{navbars.map((eachTab) => (
+						{navbars.map((eachTab, index) => (
 							<TabsTrigger
+								key={index}
 								value={eachTab}
 								className="px-[42px] py-[20px] my-[8px] focus:bg-[#2D51CF] aria-selected:bg-[#2D51CF] rounded-[100px]"
 							>
