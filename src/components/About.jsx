@@ -9,11 +9,11 @@ const AboutMilad = () => {
 	useEffect(() => console.log('test', showModal), [showModal]);
 	return (
 		<div
-			className="flex flex-col"
+			className="flex flex-col "
 			id="aboutMilad"
 		>
-			<div className="flex flex-row">
-				<div className="md:ml-[104px] md:mt-[32px] mr-[40px]">
+			<div className="flex flex-col-reverse md:flex-row">
+				<div className="md:ml-[104px] md:mt-[32px] md:mr-[40px] mx-[30px]">
 					<h2 className="md:text-[64px]">{`Milad Shirazi`}</h2>
 					<h3 className="md:text-[32px]">
 						{`I apply AI to solve problems!`}
@@ -51,7 +51,7 @@ const AboutMilad = () => {
 						Engineering common practices.
 					</p>
 				</div>
-				<div className="relative group flex flex-col justify-center items-center gap-[43px] mt-[62px] mr-[64px]">
+				<div className="relative group flex flex-col justify-center items-center gap-[43px] mt-[62px] md:mr-[64px]">
 					<div
 						className={`relative md:min-w-[411px] bg-[url(/images/milad/milad-full.jpg)] md:min-h-[448px] min-w-[342px] min-h-[372px] rounded-[10px] hover:bg-[url(/images/milad/milad-AI-full.png)] bg-no-repeat bg-cover bg-center `}
 					/>

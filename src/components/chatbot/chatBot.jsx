@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Input from './input';
 import History from './history';
 import Clear from './clear';
@@ -19,6 +19,7 @@ const ChatBot = ({ setShowModal }) => {
 			content: input,
 		};
 
+		console.log('test time');
 		setMessages([...messages, prompt]);
 
 		await fetch('https://api.openai.com/v1/chat/completions', {
@@ -79,6 +80,18 @@ const ChatBot = ({ setShowModal }) => {
 		setMessages([]);
 		setHistory([]);
 	};
+	// useEffect(() => {
+	// 	const listener = (event) => {
+	// 		if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+	// 			event.preventDefault();
+	// 			handleSubmit();
+	// 		}
+	// 	};
+	// 	document.addEventListener('keydown', listener);
+	// 	return () => {
+	// 		document.removeEventListener('keydown', listener);
+	// 	};
+	// }, []);
 
 	return (
 		<div className="fixed top-0 right-10 gap-[20px] max-w-[1000px] my-0 mx-auto min-h-[100vh] p-[20px] bg-[#FFF]  z-50 rounded-l-[32px] min-w-[925px] !opacity-100">
@@ -102,10 +115,11 @@ const ChatBot = ({ setShowModal }) => {
 						})}
 				</div>
 				<Input
+					handleSubmit={handleSubmit}
 					value={input}
 					onChange={(e) => setInput(e.target.value)}
 					onClick={input ? handleSubmit : undefined}
-				/>{' '}
+				/>
 				{/* <Clear
 					onClick={clear}
 					className={'bg-slate-600'}

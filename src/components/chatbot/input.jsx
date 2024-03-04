@@ -1,6 +1,12 @@
 import { HiArrowRightCircle } from 'react-icons/hi2';
 
-export default function Input({ value, onChange, onClick }) {
+export default function Input({ value, onChange, onClick, handleSubmit }) {
+	const handleKeyboard = (event) => {
+		if (event.keyCode === 13) {
+			handleSubmit();
+		} else return;
+	};
+
 	return (
 		<div
 			className={
@@ -14,6 +20,7 @@ export default function Input({ value, onChange, onClick }) {
 				placeholder="Ask me anything..."
 				value={value}
 				onChange={onChange}
+				onKeyDown={(e) => handleKeyboard(e)}
 			/>
 			<button
 				className={
