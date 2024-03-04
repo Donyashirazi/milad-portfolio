@@ -32,7 +32,7 @@ const Header = ({ headerTransparent }) => {
 			}`}
 		>
 			<button onClick={() => router.push('/')}>
-				<h2 className="md:text-[24px] text-[20px] hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)] transition-all duration-100">
+				<h2 className="md:text-[24px] text-[16px] hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)] transition-all duration-100">
 					{`Milad’s`}
 					<span className="md:text-[16px] text-[14px]">
 						{`Portfolio`}
@@ -40,7 +40,7 @@ const Header = ({ headerTransparent }) => {
 				</h2>
 			</button>
 
-			<div className="flex md:flex-row md:gap-[24px] text-[20px] cursor-pointer ">
+			<div className="flex md:flex-row gap-[6px] md:gap-[24px] text-[14px] md:text-[20px] cursor-pointer ">
 				<Link
 					to="projects"
 					smooth={true}

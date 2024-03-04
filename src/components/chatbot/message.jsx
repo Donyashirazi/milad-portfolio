@@ -15,6 +15,7 @@ export default function Message({ role, content }) {
 					alt="profile avatar"
 					width={80}
 					height={80}
+					className="rounded-full"
 				/>
 			</div>
 			<div className="bg-[#323232] px-[28px] py-[22px] my-auto rounded-r-[32px] rounded-bl-[32px] text-white ">

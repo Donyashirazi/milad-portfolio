@@ -18,9 +18,9 @@ const ProjectSwiper = () => {
 	return (
 		<div
 			id="projects"
-			className="flex flex-col items-start justify-start mx-[106px] mt-[106px]"
+			className="flex flex-col items-start justify-start md:mx-[106px] mt-[106px]"
 		>
-			<div className="flex flex-col md:h-[800px] mb-[60px] ml-[-16px]">
+			<div className="flex flex-col ml-[30px]  md:h-[800px] mb-[60px] md:ml-[-16px]">
 				<Swiper
 					pagination={{
 						type: 'progressbar',
