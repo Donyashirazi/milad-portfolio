@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'react-scroll/modules/components/Link';
 import ResumeDown from './resumedown';
 
-const Header = ({ headerTransparent }) => {
+const Header = ({ headerTransparent, headerLinks }) => {
 	const [scrollValue, setScrollValue] = useState(0);
 	const router = useRouter();
 	useEffect(() => {
@@ -42,6 +42,7 @@ const Header = ({ headerTransparent }) => {
 
 			<div className="flex md:flex-row gap-[6px] md:gap-[24px] text-[14px] md:text-[20px] cursor-pointer ">
 				<Link
+					href="/"
 					to="projects"
 					smooth={true}
 					offset={-240}

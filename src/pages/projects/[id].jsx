@@ -1,4 +1,5 @@
 import AllProjects from '@/components/data';
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 import NonTechnicalSummery from '@/components/tabs/non-technical-summery';
 import Results from '@/components/tabs/results';
@@ -37,7 +38,10 @@ const Projects = ({ project }) => {
 					backgroundImage: `url(${project[0]?.image})`,
 				}}
 			>
-				<Header headerTransparent={true} />
+				<Header
+					headerTransparent={true}
+					headerLinks={false}
+				/>
 			</div>
 			<Tabs
 				defaultValue={'Non-Technical summary'}

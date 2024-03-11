@@ -1,9 +1,17 @@
 import { HiArrowRightCircle } from 'react-icons/hi2';
 
-export default function Input({ value, onChange, onClick, handleSubmit }) {
+export default function Input({
+	setInput,
+	value,
+	onChange,
+	onClick,
+	handleSubmit,
+}) {
 	const handleKeyboard = (event) => {
 		if (event.keyCode === 13) {
 			handleSubmit();
+
+			setInput('');
 		} else return;
 	};
 

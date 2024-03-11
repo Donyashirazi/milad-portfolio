@@ -2,6 +2,11 @@ import React from 'react';
 import { HiMiniArrowRightCircle } from 'react-icons/hi2';
 
 const ChatBox = ({ setShowModal }) => {
+	const testFocus = () => {
+		setTimeout(() => {
+			document.querySelector('input')?.focus();
+		});
+	};
 	return (
 		<div className="fixed z-50 bottom-0 ">
 			<div className="absolute z-0 bottom-[22px] left-[18px] md:w-[373px] md:h-[202px] bg-[#FFFFFF]/[0.96] rounded-[32px] " />
@@ -13,7 +18,9 @@ const ChatBox = ({ setShowModal }) => {
 						him. Ask me anything!`}
 					</p>
 					<button
-						onClick={() => setShowModal(true)}
+						onClick={() => {
+							setShowModal(true), testFocus();
+						}}
 						className="w-full flex flex-row items-center justify-between md:text-[20px] rounded-[32px] hover:bg-[#2D51CF]/[0.20]"
 					>
 						<p className="text-[#000000] ">{`Click here to start!`}</p>

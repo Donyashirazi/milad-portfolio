@@ -17,7 +17,7 @@ const NonTechnicalSummery = ({ project }) => {
 				</p>
 				<p className="">{projectVariants?.content1?.description}</p>
 
-				<div className="relative max-w-[1200px] left-1/2 transform -translate-x-1/2  ">
+				<div className="relative flex itemx-center max-w-[1200px] left-1/2 transform -translate-x-1/2  ">
 					{projectVariants?.content1?.image && (
 						<Image
 							src={projectVariants?.content1?.image}
@@ -25,7 +25,7 @@ const NonTechnicalSummery = ({ project }) => {
 							width={0}
 							height={0}
 							sizes="100vw"
-							style={{ width: '100%', height: 'auto' }}
+							style={{ width: '10%', height: 'auto' }}
 						/>
 					)}
 
@@ -42,7 +42,7 @@ const NonTechnicalSummery = ({ project }) => {
 				</p>
 				<p className="">{projectVariants?.content2?.description}</p>
 
-				<div className="relative max-w-[1200px] left-1/2 transform -translate-x-1/2  ">
+				<div className="relative flex flex-col justify-center w-[80%] items-center max-w-[1200px] left-1/2 transform -translate-x-1/2  ">
 					{projectVariants?.content2?.image && (
 						<Image
 							src={projectVariants?.content2?.image}

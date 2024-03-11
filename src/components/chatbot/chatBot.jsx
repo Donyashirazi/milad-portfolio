@@ -50,10 +50,9 @@ const ChatBot = ({ setShowModal }) => {
 					{ role: 'user', content: input },
 					{ role: 'assistant', content: res },
 				]);
-				setInput('');
 			});
 		console.log('history', history);
-		console.log('messages', messages);
+		console.log('messages', input);
 	};
 
 	// try {
@@ -92,7 +91,11 @@ const ChatBot = ({ setShowModal }) => {
 	// 		document.removeEventListener('keydown', listener);
 	// 	};
 	// }, []);
-
+	const testFocus = () => {
+		setTimeout(() => {
+			document.querySelector('input').focus();
+		});
+	};
 	return (
 		<div className="fixed top-0 right-10 gap-[20px] max-w-[1000px] my-0 mx-auto min-h-[100vh] p-[20px] bg-[#FFF]  z-50 rounded-l-[32px] min-w-[925px] !opacity-100">
 			<HiOutlineX
@@ -115,6 +118,7 @@ const ChatBot = ({ setShowModal }) => {
 						})}
 				</div>
 				<Input
+					setInput={setInput}
 					handleSubmit={handleSubmit}
 					value={input}
 					onChange={(e) => setInput(e.target.value)}
